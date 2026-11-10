@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_181ccbf2f7158bc5801969b4af249693 {
+                #map_16a115000bde588c66be45ae5e300141 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -50,18 +50,21 @@
             </script>
 
         
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
 </head>
 <body>
     
     
-            <div class="folium-map" id="map_181ccbf2f7158bc5801969b4af249693" ></div>
+            <div class="folium-map" id="map_16a115000bde588c66be45ae5e300141" ></div>
         
 </body>
 <script>
     
     
-            var map_181ccbf2f7158bc5801969b4af249693 = L.map(
-                "map_181ccbf2f7158bc5801969b4af249693",
+            var map_16a115000bde588c66be45ae5e300141 = L.map(
+                "map_16a115000bde588c66be45ae5e300141",
                 {
                     center: [32.0, -98.0],
                     crs: L.CRS.EPSG3857,
@@ -78,7 +81,7 @@
 
         
     
-            var tile_layer_f9bc30ed2177776c521a9ce9223bb619 = L.tileLayer(
+            var tile_layer_93fb19deb50ec0c6176dc2f8c1d2eb9e = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -95,33 +98,2112 @@
             );
         
     
-            tile_layer_f9bc30ed2177776c521a9ce9223bb619.addTo(map_181ccbf2f7158bc5801969b4af249693);
+            tile_layer_93fb19deb50ec0c6176dc2f8c1d2eb9e.addTo(map_16a115000bde588c66be45ae5e300141);
         
     
-            var circle_marker_b97eb87b5dc1658dd568acfc7aa7871d = L.circleMarker(
+            var marker_cluster_874441b4f1b47ba60f5d0471993c0e57 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_7680c96caa7606641b3544bd39b29ae5 = L.circleMarker(
                 [28.5618571, -80.577366],
-                {"bubblingMouseEvents": true, "color": "#00699c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00699c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
-            ).addTo(map_181ccbf2f7158bc5801969b4af249693);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
         
     
-        var popup_e6e8024b4af56e8c24f61689d7101441 = L.popup({
+        var popup_ca48f9b22dbd693a1af4f66e31cfbcfd = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_a554405b973661508e053d3758195c26 = $(`<div id="html_a554405b973661508e053d3758195c26" style="width: 100.0%; height: 100.0%;">CCAFS SLC 40: 33/55 first-stage landing successes</div>`)[0];
-                popup_e6e8024b4af56e8c24f61689d7101441.setContent(html_a554405b973661508e053d3758195c26);
+                var html_f757f00971421e2e23beb0636146d499 = $(`<div id="html_f757f00971421e2e23beb0636146d499" style="width: 100.0%; height: 100.0%;">Flight 1 | 2010-06-04 | CCAFS SLC 40 | Unsuccessful / no landing</div>`)[0];
+                popup_ca48f9b22dbd693a1af4f66e31cfbcfd.setContent(html_f757f00971421e2e23beb0636146d499);
             
         
 
-        circle_marker_b97eb87b5dc1658dd568acfc7aa7871d.bindPopup(popup_e6e8024b4af56e8c24f61689d7101441)
+        circle_marker_7680c96caa7606641b3544bd39b29ae5.bindPopup(popup_ca48f9b22dbd693a1af4f66e31cfbcfd)
         ;
 
         
     
     
-            circle_marker_b97eb87b5dc1658dd568acfc7aa7871d.bindTooltip(
+            var circle_marker_4ccf54ba693cc624d2632722d7156751 = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_7e8312ccc71ce20ad8e5120f8489e0b7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3e5bb8138e5168fb574e4bd8bc89db83 = $(`<div id="html_3e5bb8138e5168fb574e4bd8bc89db83" style="width: 100.0%; height: 100.0%;">Flight 2 | 2012-05-22 | CCAFS SLC 40 | Unsuccessful / no landing</div>`)[0];
+                popup_7e8312ccc71ce20ad8e5120f8489e0b7.setContent(html_3e5bb8138e5168fb574e4bd8bc89db83);
+            
+        
+
+        circle_marker_4ccf54ba693cc624d2632722d7156751.bindPopup(popup_7e8312ccc71ce20ad8e5120f8489e0b7)
+        ;
+
+        
+    
+    
+            var circle_marker_093c47a797b1d28fc5815bbf102c5f01 = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_60b03f3f91225f38e27592f0bd74fb24 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3f94129b8b9ae98976e4426ee6ed5baf = $(`<div id="html_3f94129b8b9ae98976e4426ee6ed5baf" style="width: 100.0%; height: 100.0%;">Flight 3 | 2013-03-01 | CCAFS SLC 40 | Unsuccessful / no landing</div>`)[0];
+                popup_60b03f3f91225f38e27592f0bd74fb24.setContent(html_3f94129b8b9ae98976e4426ee6ed5baf);
+            
+        
+
+        circle_marker_093c47a797b1d28fc5815bbf102c5f01.bindPopup(popup_60b03f3f91225f38e27592f0bd74fb24)
+        ;
+
+        
+    
+    
+            var circle_marker_f40503ebbaf76cfc10af9b57b34b930d = L.circleMarker(
+                [34.632093, -120.610829],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_78ad7e1fbe571925096a6868f6f2d2a3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d3bf830f353746d2c1b6af3fc538bf24 = $(`<div id="html_d3bf830f353746d2c1b6af3fc538bf24" style="width: 100.0%; height: 100.0%;">Flight 4 | 2013-09-29 | VAFB SLC 4E | Unsuccessful / no landing</div>`)[0];
+                popup_78ad7e1fbe571925096a6868f6f2d2a3.setContent(html_d3bf830f353746d2c1b6af3fc538bf24);
+            
+        
+
+        circle_marker_f40503ebbaf76cfc10af9b57b34b930d.bindPopup(popup_78ad7e1fbe571925096a6868f6f2d2a3)
+        ;
+
+        
+    
+    
+            var circle_marker_3f253ec9fce8679381c25d493506bd50 = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_867b68b41f18b410020d34fbfa3bc496 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ca5904dcad5707494b436676cf92a4d2 = $(`<div id="html_ca5904dcad5707494b436676cf92a4d2" style="width: 100.0%; height: 100.0%;">Flight 5 | 2013-12-03 | CCAFS SLC 40 | Unsuccessful / no landing</div>`)[0];
+                popup_867b68b41f18b410020d34fbfa3bc496.setContent(html_ca5904dcad5707494b436676cf92a4d2);
+            
+        
+
+        circle_marker_3f253ec9fce8679381c25d493506bd50.bindPopup(popup_867b68b41f18b410020d34fbfa3bc496)
+        ;
+
+        
+    
+    
+            var circle_marker_ce86011dab2e5d40320970148f1cfcfd = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_3b5467702ea056c685bef941307f218b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2753fc2eeb7684b0704f72daec77808a = $(`<div id="html_2753fc2eeb7684b0704f72daec77808a" style="width: 100.0%; height: 100.0%;">Flight 6 | 2014-01-06 | CCAFS SLC 40 | Unsuccessful / no landing</div>`)[0];
+                popup_3b5467702ea056c685bef941307f218b.setContent(html_2753fc2eeb7684b0704f72daec77808a);
+            
+        
+
+        circle_marker_ce86011dab2e5d40320970148f1cfcfd.bindPopup(popup_3b5467702ea056c685bef941307f218b)
+        ;
+
+        
+    
+    
+            var circle_marker_0d2d97098791d8c6eae662816f57afa9 = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_bb63abedcb5e69a26524352d06c009f5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_25daf18c23d54dfc239c32a16744ffe1 = $(`<div id="html_25daf18c23d54dfc239c32a16744ffe1" style="width: 100.0%; height: 100.0%;">Flight 7 | 2014-04-18 | CCAFS SLC 40 | Successful</div>`)[0];
+                popup_bb63abedcb5e69a26524352d06c009f5.setContent(html_25daf18c23d54dfc239c32a16744ffe1);
+            
+        
+
+        circle_marker_0d2d97098791d8c6eae662816f57afa9.bindPopup(popup_bb63abedcb5e69a26524352d06c009f5)
+        ;
+
+        
+    
+    
+            var circle_marker_ca8166ff5988c1edecba044905745c90 = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_19eab3d94a1a41b7b00aa222bfb1e05c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2e35e8456d930630566ea3f47bf5e406 = $(`<div id="html_2e35e8456d930630566ea3f47bf5e406" style="width: 100.0%; height: 100.0%;">Flight 8 | 2014-07-14 | CCAFS SLC 40 | Successful</div>`)[0];
+                popup_19eab3d94a1a41b7b00aa222bfb1e05c.setContent(html_2e35e8456d930630566ea3f47bf5e406);
+            
+        
+
+        circle_marker_ca8166ff5988c1edecba044905745c90.bindPopup(popup_19eab3d94a1a41b7b00aa222bfb1e05c)
+        ;
+
+        
+    
+    
+            var circle_marker_6342dd241ac172711e127eb73b9ee1d5 = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_e300d868e6cd20d9921568b1d035e472 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_350562cc522fe71c4e96b63b38890171 = $(`<div id="html_350562cc522fe71c4e96b63b38890171" style="width: 100.0%; height: 100.0%;">Flight 9 | 2014-08-05 | CCAFS SLC 40 | Unsuccessful / no landing</div>`)[0];
+                popup_e300d868e6cd20d9921568b1d035e472.setContent(html_350562cc522fe71c4e96b63b38890171);
+            
+        
+
+        circle_marker_6342dd241ac172711e127eb73b9ee1d5.bindPopup(popup_e300d868e6cd20d9921568b1d035e472)
+        ;
+
+        
+    
+    
+            var circle_marker_c87d14f9017694bc5c6e59b38a14e18d = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_e2bfeabd6f2b4beebee7df344273cc8b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_357163c9bcad1248d611a4cb20abb7d0 = $(`<div id="html_357163c9bcad1248d611a4cb20abb7d0" style="width: 100.0%; height: 100.0%;">Flight 10 | 2014-09-07 | CCAFS SLC 40 | Unsuccessful / no landing</div>`)[0];
+                popup_e2bfeabd6f2b4beebee7df344273cc8b.setContent(html_357163c9bcad1248d611a4cb20abb7d0);
+            
+        
+
+        circle_marker_c87d14f9017694bc5c6e59b38a14e18d.bindPopup(popup_e2bfeabd6f2b4beebee7df344273cc8b)
+        ;
+
+        
+    
+    
+            var circle_marker_2be7610b20e70d4aa54ffc142237a01b = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_66a8683ea48bd2a220947c2c30feca11 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6c468d3382c9d2d43e5635f9b3f5b5d9 = $(`<div id="html_6c468d3382c9d2d43e5635f9b3f5b5d9" style="width: 100.0%; height: 100.0%;">Flight 11 | 2014-09-21 | CCAFS SLC 40 | Unsuccessful / no landing</div>`)[0];
+                popup_66a8683ea48bd2a220947c2c30feca11.setContent(html_6c468d3382c9d2d43e5635f9b3f5b5d9);
+            
+        
+
+        circle_marker_2be7610b20e70d4aa54ffc142237a01b.bindPopup(popup_66a8683ea48bd2a220947c2c30feca11)
+        ;
+
+        
+    
+    
+            var circle_marker_dc6a6d628a3474093cb551ca890a4d3d = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_047d03514b47f1af2ec50e46263f49ff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_32264d36f666f7c87098f0a5bc8767e9 = $(`<div id="html_32264d36f666f7c87098f0a5bc8767e9" style="width: 100.0%; height: 100.0%;">Flight 12 | 2015-01-10 | CCAFS SLC 40 | Unsuccessful / no landing</div>`)[0];
+                popup_047d03514b47f1af2ec50e46263f49ff.setContent(html_32264d36f666f7c87098f0a5bc8767e9);
+            
+        
+
+        circle_marker_dc6a6d628a3474093cb551ca890a4d3d.bindPopup(popup_047d03514b47f1af2ec50e46263f49ff)
+        ;
+
+        
+    
+    
+            var circle_marker_e022291372d1cdbeb2cf570a0d384af3 = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_cb922876c08e195dc6b47aad204a10d6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1f32ea92a5902503046c56e272770fd5 = $(`<div id="html_1f32ea92a5902503046c56e272770fd5" style="width: 100.0%; height: 100.0%;">Flight 13 | 2015-02-11 | CCAFS SLC 40 | Successful</div>`)[0];
+                popup_cb922876c08e195dc6b47aad204a10d6.setContent(html_1f32ea92a5902503046c56e272770fd5);
+            
+        
+
+        circle_marker_e022291372d1cdbeb2cf570a0d384af3.bindPopup(popup_cb922876c08e195dc6b47aad204a10d6)
+        ;
+
+        
+    
+    
+            var circle_marker_3b25548b2272e415e09fd35a3ba8bebe = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_07490e519de698a3ae52defb67c6be7f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a8c61bbbcf7f3385c2022e1b2f32add2 = $(`<div id="html_a8c61bbbcf7f3385c2022e1b2f32add2" style="width: 100.0%; height: 100.0%;">Flight 14 | 2015-04-14 | CCAFS SLC 40 | Unsuccessful / no landing</div>`)[0];
+                popup_07490e519de698a3ae52defb67c6be7f.setContent(html_a8c61bbbcf7f3385c2022e1b2f32add2);
+            
+        
+
+        circle_marker_3b25548b2272e415e09fd35a3ba8bebe.bindPopup(popup_07490e519de698a3ae52defb67c6be7f)
+        ;
+
+        
+    
+    
+            var circle_marker_361eb47cda630b3db1a17cfc0760bf4d = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_24120baa358d0170f70de74e079919d9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_439c892a35e155d4f88cba47c4309afe = $(`<div id="html_439c892a35e155d4f88cba47c4309afe" style="width: 100.0%; height: 100.0%;">Flight 15 | 2015-04-27 | CCAFS SLC 40 | Unsuccessful / no landing</div>`)[0];
+                popup_24120baa358d0170f70de74e079919d9.setContent(html_439c892a35e155d4f88cba47c4309afe);
+            
+        
+
+        circle_marker_361eb47cda630b3db1a17cfc0760bf4d.bindPopup(popup_24120baa358d0170f70de74e079919d9)
+        ;
+
+        
+    
+    
+            var circle_marker_7b022b670cfc7b6e583f7dcc0c06acb8 = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_94ca2a5f5adb9d850304487c1ce66a90 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_77dbeef621dc4794d782b9d9fcb37cc9 = $(`<div id="html_77dbeef621dc4794d782b9d9fcb37cc9" style="width: 100.0%; height: 100.0%;">Flight 16 | 2015-06-28 | CCAFS SLC 40 | Unsuccessful / no landing</div>`)[0];
+                popup_94ca2a5f5adb9d850304487c1ce66a90.setContent(html_77dbeef621dc4794d782b9d9fcb37cc9);
+            
+        
+
+        circle_marker_7b022b670cfc7b6e583f7dcc0c06acb8.bindPopup(popup_94ca2a5f5adb9d850304487c1ce66a90)
+        ;
+
+        
+    
+    
+            var circle_marker_dd715b02d32b36222d39f8bc06b7d752 = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_5e1daf64969b50fb096484f3fe65215f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_118dd680066de2bed4a267a13734fe34 = $(`<div id="html_118dd680066de2bed4a267a13734fe34" style="width: 100.0%; height: 100.0%;">Flight 17 | 2015-12-22 | CCAFS SLC 40 | Successful</div>`)[0];
+                popup_5e1daf64969b50fb096484f3fe65215f.setContent(html_118dd680066de2bed4a267a13734fe34);
+            
+        
+
+        circle_marker_dd715b02d32b36222d39f8bc06b7d752.bindPopup(popup_5e1daf64969b50fb096484f3fe65215f)
+        ;
+
+        
+    
+    
+            var circle_marker_050a2beff26f7653e5f9b392c1de6b39 = L.circleMarker(
+                [34.632093, -120.610829],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_805c086fe684c197dd6b60edcdebcafd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5191949138a23f71327a88382227254a = $(`<div id="html_5191949138a23f71327a88382227254a" style="width: 100.0%; height: 100.0%;">Flight 18 | 2016-01-17 | VAFB SLC 4E | Unsuccessful / no landing</div>`)[0];
+                popup_805c086fe684c197dd6b60edcdebcafd.setContent(html_5191949138a23f71327a88382227254a);
+            
+        
+
+        circle_marker_050a2beff26f7653e5f9b392c1de6b39.bindPopup(popup_805c086fe684c197dd6b60edcdebcafd)
+        ;
+
+        
+    
+    
+            var circle_marker_e8ced9627384da1aa22e1fc9ec288387 = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_1a7afb354ea0c99f279f94a1d8c91ee0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8c05faad5f1c9ad7d9612a244f3a47fb = $(`<div id="html_8c05faad5f1c9ad7d9612a244f3a47fb" style="width: 100.0%; height: 100.0%;">Flight 19 | 2016-03-04 | CCAFS SLC 40 | Unsuccessful / no landing</div>`)[0];
+                popup_1a7afb354ea0c99f279f94a1d8c91ee0.setContent(html_8c05faad5f1c9ad7d9612a244f3a47fb);
+            
+        
+
+        circle_marker_e8ced9627384da1aa22e1fc9ec288387.bindPopup(popup_1a7afb354ea0c99f279f94a1d8c91ee0)
+        ;
+
+        
+    
+    
+            var circle_marker_5a1d91452a9b423bef0b842b562399de = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_72aac79948af14756cec86d06c36a080 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0f63b17ce44d5b230beb4976170f5858 = $(`<div id="html_0f63b17ce44d5b230beb4976170f5858" style="width: 100.0%; height: 100.0%;">Flight 20 | 2016-04-08 | CCAFS SLC 40 | Successful</div>`)[0];
+                popup_72aac79948af14756cec86d06c36a080.setContent(html_0f63b17ce44d5b230beb4976170f5858);
+            
+        
+
+        circle_marker_5a1d91452a9b423bef0b842b562399de.bindPopup(popup_72aac79948af14756cec86d06c36a080)
+        ;
+
+        
+    
+    
+            var circle_marker_fde0acac798fe7fc9f2a1d506e952c6c = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_19d2321a44240587767cde82c3ec4039 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2425877a2452913df1627c15c00aa300 = $(`<div id="html_2425877a2452913df1627c15c00aa300" style="width: 100.0%; height: 100.0%;">Flight 21 | 2016-05-06 | CCAFS SLC 40 | Successful</div>`)[0];
+                popup_19d2321a44240587767cde82c3ec4039.setContent(html_2425877a2452913df1627c15c00aa300);
+            
+        
+
+        circle_marker_fde0acac798fe7fc9f2a1d506e952c6c.bindPopup(popup_19d2321a44240587767cde82c3ec4039)
+        ;
+
+        
+    
+    
+            var circle_marker_44e2e69f698ad5d11a96f054c0337bd0 = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_d43cca1ef00fad865c585ce8d829f54b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_49e24eaab39d0b6fe3164fc4b272cb95 = $(`<div id="html_49e24eaab39d0b6fe3164fc4b272cb95" style="width: 100.0%; height: 100.0%;">Flight 22 | 2016-05-27 | CCAFS SLC 40 | Successful</div>`)[0];
+                popup_d43cca1ef00fad865c585ce8d829f54b.setContent(html_49e24eaab39d0b6fe3164fc4b272cb95);
+            
+        
+
+        circle_marker_44e2e69f698ad5d11a96f054c0337bd0.bindPopup(popup_d43cca1ef00fad865c585ce8d829f54b)
+        ;
+
+        
+    
+    
+            var circle_marker_66eecc6967c1b7916af4aaee551fbd63 = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_baa720e958e393cbc389e2174c255f4c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7fa8ccdeceab9b185d0723e863b1540f = $(`<div id="html_7fa8ccdeceab9b185d0723e863b1540f" style="width: 100.0%; height: 100.0%;">Flight 23 | 2016-07-18 | CCAFS SLC 40 | Successful</div>`)[0];
+                popup_baa720e958e393cbc389e2174c255f4c.setContent(html_7fa8ccdeceab9b185d0723e863b1540f);
+            
+        
+
+        circle_marker_66eecc6967c1b7916af4aaee551fbd63.bindPopup(popup_baa720e958e393cbc389e2174c255f4c)
+        ;
+
+        
+    
+    
+            var circle_marker_18583c4c2a6cdb9a80ae54a19ee69921 = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_7a713f1eecdc4932e076b7d760a42629 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e2d3c903782fc519d54fff29d0bcee1e = $(`<div id="html_e2d3c903782fc519d54fff29d0bcee1e" style="width: 100.0%; height: 100.0%;">Flight 24 | 2016-08-14 | CCAFS SLC 40 | Successful</div>`)[0];
+                popup_7a713f1eecdc4932e076b7d760a42629.setContent(html_e2d3c903782fc519d54fff29d0bcee1e);
+            
+        
+
+        circle_marker_18583c4c2a6cdb9a80ae54a19ee69921.bindPopup(popup_7a713f1eecdc4932e076b7d760a42629)
+        ;
+
+        
+    
+    
+            var circle_marker_0da0e5289d2d87bc5a69ee3e3838e5fe = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_06f789db2975c31ee5ba077c22040ccd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a131b4febba3df7600c5da9105d80d62 = $(`<div id="html_a131b4febba3df7600c5da9105d80d62" style="width: 100.0%; height: 100.0%;">Flight 25 | 2016-09-01 | CCAFS SLC 40 | Unsuccessful / no landing</div>`)[0];
+                popup_06f789db2975c31ee5ba077c22040ccd.setContent(html_a131b4febba3df7600c5da9105d80d62);
+            
+        
+
+        circle_marker_0da0e5289d2d87bc5a69ee3e3838e5fe.bindPopup(popup_06f789db2975c31ee5ba077c22040ccd)
+        ;
+
+        
+    
+    
+            var circle_marker_0140c524d6a15fe66fc0ee3445c08d08 = L.circleMarker(
+                [34.632093, -120.610829],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_c2790f27dbaf1043b63fe1706d75c70c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b97815db095594e2c8c1294c3b837489 = $(`<div id="html_b97815db095594e2c8c1294c3b837489" style="width: 100.0%; height: 100.0%;">Flight 26 | 2017-01-14 | VAFB SLC 4E | Successful</div>`)[0];
+                popup_c2790f27dbaf1043b63fe1706d75c70c.setContent(html_b97815db095594e2c8c1294c3b837489);
+            
+        
+
+        circle_marker_0140c524d6a15fe66fc0ee3445c08d08.bindPopup(popup_c2790f27dbaf1043b63fe1706d75c70c)
+        ;
+
+        
+    
+    
+            var circle_marker_16e7241d2ee675fb176664558da87b42 = L.circleMarker(
+                [28.6080585, -80.6039558],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_e175654b737921e61c774e3d40346db4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2e04cc1e0721e2a43f4c6d3e4282e3ef = $(`<div id="html_2e04cc1e0721e2a43f4c6d3e4282e3ef" style="width: 100.0%; height: 100.0%;">Flight 27 | 2017-02-19 | KSC LC 39A | Successful</div>`)[0];
+                popup_e175654b737921e61c774e3d40346db4.setContent(html_2e04cc1e0721e2a43f4c6d3e4282e3ef);
+            
+        
+
+        circle_marker_16e7241d2ee675fb176664558da87b42.bindPopup(popup_e175654b737921e61c774e3d40346db4)
+        ;
+
+        
+    
+    
+            var circle_marker_1c2289f2ab6568334da1aa8a21f5bbfb = L.circleMarker(
+                [28.6080585, -80.6039558],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_a3d8c0cec64a2ea609fafd2f2f39584f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b7093d49276d3f86208f15ab72b69ffe = $(`<div id="html_b7093d49276d3f86208f15ab72b69ffe" style="width: 100.0%; height: 100.0%;">Flight 28 | 2017-03-16 | KSC LC 39A | Unsuccessful / no landing</div>`)[0];
+                popup_a3d8c0cec64a2ea609fafd2f2f39584f.setContent(html_b7093d49276d3f86208f15ab72b69ffe);
+            
+        
+
+        circle_marker_1c2289f2ab6568334da1aa8a21f5bbfb.bindPopup(popup_a3d8c0cec64a2ea609fafd2f2f39584f)
+        ;
+
+        
+    
+    
+            var circle_marker_a0983ea82614d3a4632e1f73e095d82a = L.circleMarker(
+                [28.6080585, -80.6039558],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_4034670ba309e9d3e378957846c26848 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a0c8ea526b80d19e4dcc3339e6e17161 = $(`<div id="html_a0c8ea526b80d19e4dcc3339e6e17161" style="width: 100.0%; height: 100.0%;">Flight 29 | 2017-03-30 | KSC LC 39A | Successful</div>`)[0];
+                popup_4034670ba309e9d3e378957846c26848.setContent(html_a0c8ea526b80d19e4dcc3339e6e17161);
+            
+        
+
+        circle_marker_a0983ea82614d3a4632e1f73e095d82a.bindPopup(popup_4034670ba309e9d3e378957846c26848)
+        ;
+
+        
+    
+    
+            var circle_marker_e73f8a745f7aea04839bc3df8f768f91 = L.circleMarker(
+                [28.6080585, -80.6039558],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_2b181c5c060c2bcfa7438338ee61fc76 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6a744e5ed35855bfb83953208f10bc1f = $(`<div id="html_6a744e5ed35855bfb83953208f10bc1f" style="width: 100.0%; height: 100.0%;">Flight 30 | 2017-05-01 | KSC LC 39A | Successful</div>`)[0];
+                popup_2b181c5c060c2bcfa7438338ee61fc76.setContent(html_6a744e5ed35855bfb83953208f10bc1f);
+            
+        
+
+        circle_marker_e73f8a745f7aea04839bc3df8f768f91.bindPopup(popup_2b181c5c060c2bcfa7438338ee61fc76)
+        ;
+
+        
+    
+    
+            var circle_marker_2997db3486496ca8950ad806e9004f3b = L.circleMarker(
+                [28.6080585, -80.6039558],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_05d0265a1912563796bf541a85a9b7a8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fe3473a509e252bc5672050e8189f185 = $(`<div id="html_fe3473a509e252bc5672050e8189f185" style="width: 100.0%; height: 100.0%;">Flight 31 | 2017-05-15 | KSC LC 39A | Unsuccessful / no landing</div>`)[0];
+                popup_05d0265a1912563796bf541a85a9b7a8.setContent(html_fe3473a509e252bc5672050e8189f185);
+            
+        
+
+        circle_marker_2997db3486496ca8950ad806e9004f3b.bindPopup(popup_05d0265a1912563796bf541a85a9b7a8)
+        ;
+
+        
+    
+    
+            var circle_marker_bfcc5d2e691b436cb75f39388154ce32 = L.circleMarker(
+                [28.6080585, -80.6039558],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_5799f962f4d51e7b1139cef0016b4cc0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7f72e98347499e139f854dcf82ab17a1 = $(`<div id="html_7f72e98347499e139f854dcf82ab17a1" style="width: 100.0%; height: 100.0%;">Flight 32 | 2017-06-03 | KSC LC 39A | Successful</div>`)[0];
+                popup_5799f962f4d51e7b1139cef0016b4cc0.setContent(html_7f72e98347499e139f854dcf82ab17a1);
+            
+        
+
+        circle_marker_bfcc5d2e691b436cb75f39388154ce32.bindPopup(popup_5799f962f4d51e7b1139cef0016b4cc0)
+        ;
+
+        
+    
+    
+            var circle_marker_ccf3741b58dd9a293c4cf821fd0d6e05 = L.circleMarker(
+                [28.6080585, -80.6039558],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_36bd25c0c43ef884fd33e5cd25324a56 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6ab8b391f8570175455ea048f740700b = $(`<div id="html_6ab8b391f8570175455ea048f740700b" style="width: 100.0%; height: 100.0%;">Flight 33 | 2017-06-23 | KSC LC 39A | Successful</div>`)[0];
+                popup_36bd25c0c43ef884fd33e5cd25324a56.setContent(html_6ab8b391f8570175455ea048f740700b);
+            
+        
+
+        circle_marker_ccf3741b58dd9a293c4cf821fd0d6e05.bindPopup(popup_36bd25c0c43ef884fd33e5cd25324a56)
+        ;
+
+        
+    
+    
+            var circle_marker_04778f1d980bb9b2c9f98724f536a09c = L.circleMarker(
+                [34.632093, -120.610829],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_237bd723816a3f88a810d33706c4bf65 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ef071e5cfdf93e7935209ff54c709366 = $(`<div id="html_ef071e5cfdf93e7935209ff54c709366" style="width: 100.0%; height: 100.0%;">Flight 34 | 2017-06-25 | VAFB SLC 4E | Successful</div>`)[0];
+                popup_237bd723816a3f88a810d33706c4bf65.setContent(html_ef071e5cfdf93e7935209ff54c709366);
+            
+        
+
+        circle_marker_04778f1d980bb9b2c9f98724f536a09c.bindPopup(popup_237bd723816a3f88a810d33706c4bf65)
+        ;
+
+        
+    
+    
+            var circle_marker_fa249271d21b056c5eb0cd6411805c16 = L.circleMarker(
+                [28.6080585, -80.6039558],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_728551de6a3c7629468126a8057b068f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eac2d491e05d87501a9426abf0a19c92 = $(`<div id="html_eac2d491e05d87501a9426abf0a19c92" style="width: 100.0%; height: 100.0%;">Flight 35 | 2017-07-05 | KSC LC 39A | Unsuccessful / no landing</div>`)[0];
+                popup_728551de6a3c7629468126a8057b068f.setContent(html_eac2d491e05d87501a9426abf0a19c92);
+            
+        
+
+        circle_marker_fa249271d21b056c5eb0cd6411805c16.bindPopup(popup_728551de6a3c7629468126a8057b068f)
+        ;
+
+        
+    
+    
+            var circle_marker_0514745602c45cd61ea5a77f5c05ab22 = L.circleMarker(
+                [28.6080585, -80.6039558],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_ff65af6947cc0f093186f970efcf43d3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_66e708583a7def2448f5b942ae381df3 = $(`<div id="html_66e708583a7def2448f5b942ae381df3" style="width: 100.0%; height: 100.0%;">Flight 36 | 2017-08-14 | KSC LC 39A | Successful</div>`)[0];
+                popup_ff65af6947cc0f093186f970efcf43d3.setContent(html_66e708583a7def2448f5b942ae381df3);
+            
+        
+
+        circle_marker_0514745602c45cd61ea5a77f5c05ab22.bindPopup(popup_ff65af6947cc0f093186f970efcf43d3)
+        ;
+
+        
+    
+    
+            var circle_marker_c5814275bde0383c542c0671618ca74d = L.circleMarker(
+                [34.632093, -120.610829],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_242ccf4463bc04d1415ccecb7d71d8bb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2d513a908f27ab91670902509e94aee8 = $(`<div id="html_2d513a908f27ab91670902509e94aee8" style="width: 100.0%; height: 100.0%;">Flight 37 | 2017-08-24 | VAFB SLC 4E | Successful</div>`)[0];
+                popup_242ccf4463bc04d1415ccecb7d71d8bb.setContent(html_2d513a908f27ab91670902509e94aee8);
+            
+        
+
+        circle_marker_c5814275bde0383c542c0671618ca74d.bindPopup(popup_242ccf4463bc04d1415ccecb7d71d8bb)
+        ;
+
+        
+    
+    
+            var circle_marker_20cc3ec42e6b466380f4c08331d9e19d = L.circleMarker(
+                [28.6080585, -80.6039558],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_a346c8b186022806e4b2778e6215e784 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5c68dbacedb8c88133ce8c31a1a8437f = $(`<div id="html_5c68dbacedb8c88133ce8c31a1a8437f" style="width: 100.0%; height: 100.0%;">Flight 38 | 2017-09-07 | KSC LC 39A | Successful</div>`)[0];
+                popup_a346c8b186022806e4b2778e6215e784.setContent(html_5c68dbacedb8c88133ce8c31a1a8437f);
+            
+        
+
+        circle_marker_20cc3ec42e6b466380f4c08331d9e19d.bindPopup(popup_a346c8b186022806e4b2778e6215e784)
+        ;
+
+        
+    
+    
+            var circle_marker_8b45c9e20b35c33c9cc68ee0da9b5161 = L.circleMarker(
+                [34.632093, -120.610829],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_78d42460f83441c5582ff82ff0c93ea1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3cac2f7024cc92d6c776f6c7d38180bf = $(`<div id="html_3cac2f7024cc92d6c776f6c7d38180bf" style="width: 100.0%; height: 100.0%;">Flight 39 | 2017-10-09 | VAFB SLC 4E | Successful</div>`)[0];
+                popup_78d42460f83441c5582ff82ff0c93ea1.setContent(html_3cac2f7024cc92d6c776f6c7d38180bf);
+            
+        
+
+        circle_marker_8b45c9e20b35c33c9cc68ee0da9b5161.bindPopup(popup_78d42460f83441c5582ff82ff0c93ea1)
+        ;
+
+        
+    
+    
+            var circle_marker_936ee780d8b1dc51a7eca6d841f73b1d = L.circleMarker(
+                [28.6080585, -80.6039558],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_75037e28924b9130c3937566d9a40c0b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_76694c74286de6b434aa663d107b1c9f = $(`<div id="html_76694c74286de6b434aa663d107b1c9f" style="width: 100.0%; height: 100.0%;">Flight 40 | 2017-10-11 | KSC LC 39A | Successful</div>`)[0];
+                popup_75037e28924b9130c3937566d9a40c0b.setContent(html_76694c74286de6b434aa663d107b1c9f);
+            
+        
+
+        circle_marker_936ee780d8b1dc51a7eca6d841f73b1d.bindPopup(popup_75037e28924b9130c3937566d9a40c0b)
+        ;
+
+        
+    
+    
+            var circle_marker_2d6685887194fb9d6aca05901db1f48d = L.circleMarker(
+                [28.6080585, -80.6039558],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_a69648cf7cf4fc197fdd9d0bfcbc791a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b1e61e2f886217b122aefb34f1df40f3 = $(`<div id="html_b1e61e2f886217b122aefb34f1df40f3" style="width: 100.0%; height: 100.0%;">Flight 41 | 2017-10-30 | KSC LC 39A | Successful</div>`)[0];
+                popup_a69648cf7cf4fc197fdd9d0bfcbc791a.setContent(html_b1e61e2f886217b122aefb34f1df40f3);
+            
+        
+
+        circle_marker_2d6685887194fb9d6aca05901db1f48d.bindPopup(popup_a69648cf7cf4fc197fdd9d0bfcbc791a)
+        ;
+
+        
+    
+    
+            var circle_marker_2fd4633e42369071c4aa731767ee4d45 = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_f8a3d7b1c518a556c6d576af7b4b13c8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c242fa13adf9f9301c9aa963690bae83 = $(`<div id="html_c242fa13adf9f9301c9aa963690bae83" style="width: 100.0%; height: 100.0%;">Flight 42 | 2017-12-15 | CCAFS SLC 40 | Successful</div>`)[0];
+                popup_f8a3d7b1c518a556c6d576af7b4b13c8.setContent(html_c242fa13adf9f9301c9aa963690bae83);
+            
+        
+
+        circle_marker_2fd4633e42369071c4aa731767ee4d45.bindPopup(popup_f8a3d7b1c518a556c6d576af7b4b13c8)
+        ;
+
+        
+    
+    
+            var circle_marker_8e3045bcfa7cb82c647d51664bd07009 = L.circleMarker(
+                [34.632093, -120.610829],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_3314caf8e1a97adf0c58c23baec93304 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1d43e5cd007e41b20f5edd4b36bfd75d = $(`<div id="html_1d43e5cd007e41b20f5edd4b36bfd75d" style="width: 100.0%; height: 100.0%;">Flight 43 | 2017-12-23 | VAFB SLC 4E | Successful</div>`)[0];
+                popup_3314caf8e1a97adf0c58c23baec93304.setContent(html_1d43e5cd007e41b20f5edd4b36bfd75d);
+            
+        
+
+        circle_marker_8e3045bcfa7cb82c647d51664bd07009.bindPopup(popup_3314caf8e1a97adf0c58c23baec93304)
+        ;
+
+        
+    
+    
+            var circle_marker_860f7d66359ea75ead946c8f7296a33e = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_89b3d54e266a31230e93b83ceaa63e4c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_17be25b149b2c43085c08de5bdd1d9c2 = $(`<div id="html_17be25b149b2c43085c08de5bdd1d9c2" style="width: 100.0%; height: 100.0%;">Flight 44 | 2018-01-08 | CCAFS SLC 40 | Successful</div>`)[0];
+                popup_89b3d54e266a31230e93b83ceaa63e4c.setContent(html_17be25b149b2c43085c08de5bdd1d9c2);
+            
+        
+
+        circle_marker_860f7d66359ea75ead946c8f7296a33e.bindPopup(popup_89b3d54e266a31230e93b83ceaa63e4c)
+        ;
+
+        
+    
+    
+            var circle_marker_b6746383a9d1b732a44aa5021f679c74 = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_b8d7285daf74e709ad89e9081556f7c8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9da3a855b24143ce032483075218c3ca = $(`<div id="html_9da3a855b24143ce032483075218c3ca" style="width: 100.0%; height: 100.0%;">Flight 45 | 2018-01-31 | CCAFS SLC 40 | Successful</div>`)[0];
+                popup_b8d7285daf74e709ad89e9081556f7c8.setContent(html_9da3a855b24143ce032483075218c3ca);
+            
+        
+
+        circle_marker_b6746383a9d1b732a44aa5021f679c74.bindPopup(popup_b8d7285daf74e709ad89e9081556f7c8)
+        ;
+
+        
+    
+    
+            var circle_marker_58a700f7f1de9082c9a86b7715b940b9 = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_5fdc4a1d45c67efd4b38bc22e8fa4d8a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eb5dfb384555cf58988d7a365c231912 = $(`<div id="html_eb5dfb384555cf58988d7a365c231912" style="width: 100.0%; height: 100.0%;">Flight 46 | 2018-03-06 | CCAFS SLC 40 | Unsuccessful / no landing</div>`)[0];
+                popup_5fdc4a1d45c67efd4b38bc22e8fa4d8a.setContent(html_eb5dfb384555cf58988d7a365c231912);
+            
+        
+
+        circle_marker_58a700f7f1de9082c9a86b7715b940b9.bindPopup(popup_5fdc4a1d45c67efd4b38bc22e8fa4d8a)
+        ;
+
+        
+    
+    
+            var circle_marker_9f54b6d282b9861bac4f5b979bc101c4 = L.circleMarker(
+                [34.632093, -120.610829],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_be9a8028440c71eb9dce00b45f2b74ab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_664a8957eb401cd9f1e0bc952a22c463 = $(`<div id="html_664a8957eb401cd9f1e0bc952a22c463" style="width: 100.0%; height: 100.0%;">Flight 47 | 2018-03-30 | VAFB SLC 4E | Unsuccessful / no landing</div>`)[0];
+                popup_be9a8028440c71eb9dce00b45f2b74ab.setContent(html_664a8957eb401cd9f1e0bc952a22c463);
+            
+        
+
+        circle_marker_9f54b6d282b9861bac4f5b979bc101c4.bindPopup(popup_be9a8028440c71eb9dce00b45f2b74ab)
+        ;
+
+        
+    
+    
+            var circle_marker_b0244265f8a14bb543e4e5623e473469 = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_5baa783f975311574b20b81aad15362e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bc285e36e250881c7237949c86373633 = $(`<div id="html_bc285e36e250881c7237949c86373633" style="width: 100.0%; height: 100.0%;">Flight 48 | 2018-04-02 | CCAFS SLC 40 | Unsuccessful / no landing</div>`)[0];
+                popup_5baa783f975311574b20b81aad15362e.setContent(html_bc285e36e250881c7237949c86373633);
+            
+        
+
+        circle_marker_b0244265f8a14bb543e4e5623e473469.bindPopup(popup_5baa783f975311574b20b81aad15362e)
+        ;
+
+        
+    
+    
+            var circle_marker_17d12909dc207c3adaecfae2d3a3dc72 = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_bf4f05248f4134a89db91a0437450898 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c4cd4a3dcb24dbabb1f01c90f547e117 = $(`<div id="html_c4cd4a3dcb24dbabb1f01c90f547e117" style="width: 100.0%; height: 100.0%;">Flight 49 | 2018-04-18 | CCAFS SLC 40 | Successful</div>`)[0];
+                popup_bf4f05248f4134a89db91a0437450898.setContent(html_c4cd4a3dcb24dbabb1f01c90f547e117);
+            
+        
+
+        circle_marker_17d12909dc207c3adaecfae2d3a3dc72.bindPopup(popup_bf4f05248f4134a89db91a0437450898)
+        ;
+
+        
+    
+    
+            var circle_marker_a5023ad4516e40da3cde3957d2beae1d = L.circleMarker(
+                [28.6080585, -80.6039558],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_2121638b4d27e32ab87ece0ffc391247 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_58ff1424dda67003266a6a58ca91b2b2 = $(`<div id="html_58ff1424dda67003266a6a58ca91b2b2" style="width: 100.0%; height: 100.0%;">Flight 50 | 2018-05-11 | KSC LC 39A | Successful</div>`)[0];
+                popup_2121638b4d27e32ab87ece0ffc391247.setContent(html_58ff1424dda67003266a6a58ca91b2b2);
+            
+        
+
+        circle_marker_a5023ad4516e40da3cde3957d2beae1d.bindPopup(popup_2121638b4d27e32ab87ece0ffc391247)
+        ;
+
+        
+    
+    
+            var circle_marker_b25af01453e7a3941438df783165ded3 = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_202d1353b3ef0e5f566b2d6d99212f26 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e3839d6647a157f535a7dd9c2f8455ae = $(`<div id="html_e3839d6647a157f535a7dd9c2f8455ae" style="width: 100.0%; height: 100.0%;">Flight 51 | 2018-06-04 | CCAFS SLC 40 | Unsuccessful / no landing</div>`)[0];
+                popup_202d1353b3ef0e5f566b2d6d99212f26.setContent(html_e3839d6647a157f535a7dd9c2f8455ae);
+            
+        
+
+        circle_marker_b25af01453e7a3941438df783165ded3.bindPopup(popup_202d1353b3ef0e5f566b2d6d99212f26)
+        ;
+
+        
+    
+    
+            var circle_marker_04a01457d350c36dd8b600db2ee78a23 = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_690a00849b12d7e133dbc2386f06c8dc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f69053544e8d43396c2ee631dd8cef37 = $(`<div id="html_f69053544e8d43396c2ee631dd8cef37" style="width: 100.0%; height: 100.0%;">Flight 52 | 2018-06-29 | CCAFS SLC 40 | Unsuccessful / no landing</div>`)[0];
+                popup_690a00849b12d7e133dbc2386f06c8dc.setContent(html_f69053544e8d43396c2ee631dd8cef37);
+            
+        
+
+        circle_marker_04a01457d350c36dd8b600db2ee78a23.bindPopup(popup_690a00849b12d7e133dbc2386f06c8dc)
+        ;
+
+        
+    
+    
+            var circle_marker_f43fbe3723df0ad60e26605a18281342 = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_4a2819ff036f91c962782e04860cc52b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_019679ddbec56812ff932e3b4715e06c = $(`<div id="html_019679ddbec56812ff932e3b4715e06c" style="width: 100.0%; height: 100.0%;">Flight 53 | 2018-07-22 | CCAFS SLC 40 | Successful</div>`)[0];
+                popup_4a2819ff036f91c962782e04860cc52b.setContent(html_019679ddbec56812ff932e3b4715e06c);
+            
+        
+
+        circle_marker_f43fbe3723df0ad60e26605a18281342.bindPopup(popup_4a2819ff036f91c962782e04860cc52b)
+        ;
+
+        
+    
+    
+            var circle_marker_c269a20b6eccfc38550c8160acefaf77 = L.circleMarker(
+                [34.632093, -120.610829],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_362ea5b9cb1ae6d1ce7a184fdc4a2278 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5e8abb46e8c4feaf20856ce709432878 = $(`<div id="html_5e8abb46e8c4feaf20856ce709432878" style="width: 100.0%; height: 100.0%;">Flight 54 | 2018-07-25 | VAFB SLC 4E | Successful</div>`)[0];
+                popup_362ea5b9cb1ae6d1ce7a184fdc4a2278.setContent(html_5e8abb46e8c4feaf20856ce709432878);
+            
+        
+
+        circle_marker_c269a20b6eccfc38550c8160acefaf77.bindPopup(popup_362ea5b9cb1ae6d1ce7a184fdc4a2278)
+        ;
+
+        
+    
+    
+            var circle_marker_c5f87c3825683c907d63cf8ebc7b0c32 = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_0c308a5627323baade6f28a983a50175 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0cd57b1310e725dd7e58a926c1c70a23 = $(`<div id="html_0cd57b1310e725dd7e58a926c1c70a23" style="width: 100.0%; height: 100.0%;">Flight 55 | 2018-08-07 | CCAFS SLC 40 | Successful</div>`)[0];
+                popup_0c308a5627323baade6f28a983a50175.setContent(html_0cd57b1310e725dd7e58a926c1c70a23);
+            
+        
+
+        circle_marker_c5f87c3825683c907d63cf8ebc7b0c32.bindPopup(popup_0c308a5627323baade6f28a983a50175)
+        ;
+
+        
+    
+    
+            var circle_marker_250f5a7dc6e6c9368c77e5c63bbe8684 = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_ac9c20c511889cce37cf1fc9645333a5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b8a391deda2be00dfea44d2804e0593 = $(`<div id="html_7b8a391deda2be00dfea44d2804e0593" style="width: 100.0%; height: 100.0%;">Flight 56 | 2018-09-10 | CCAFS SLC 40 | Successful</div>`)[0];
+                popup_ac9c20c511889cce37cf1fc9645333a5.setContent(html_7b8a391deda2be00dfea44d2804e0593);
+            
+        
+
+        circle_marker_250f5a7dc6e6c9368c77e5c63bbe8684.bindPopup(popup_ac9c20c511889cce37cf1fc9645333a5)
+        ;
+
+        
+    
+    
+            var circle_marker_a72d40e965528b5348def32dda0920ab = L.circleMarker(
+                [34.632093, -120.610829],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_db3b76ab35737bb5a368975387b3068e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_769c4c56f7a9b295e632b6464ffb55a4 = $(`<div id="html_769c4c56f7a9b295e632b6464ffb55a4" style="width: 100.0%; height: 100.0%;">Flight 57 | 2018-10-08 | VAFB SLC 4E | Successful</div>`)[0];
+                popup_db3b76ab35737bb5a368975387b3068e.setContent(html_769c4c56f7a9b295e632b6464ffb55a4);
+            
+        
+
+        circle_marker_a72d40e965528b5348def32dda0920ab.bindPopup(popup_db3b76ab35737bb5a368975387b3068e)
+        ;
+
+        
+    
+    
+            var circle_marker_f15fdb575fed5428e8a4d374418215d5 = L.circleMarker(
+                [28.6080585, -80.6039558],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_35fd636f5bf3bfa8ed7f617a656d308c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_625ebb27e27fb791ea3d07c39ac426b8 = $(`<div id="html_625ebb27e27fb791ea3d07c39ac426b8" style="width: 100.0%; height: 100.0%;">Flight 58 | 2018-11-15 | KSC LC 39A | Successful</div>`)[0];
+                popup_35fd636f5bf3bfa8ed7f617a656d308c.setContent(html_625ebb27e27fb791ea3d07c39ac426b8);
+            
+        
+
+        circle_marker_f15fdb575fed5428e8a4d374418215d5.bindPopup(popup_35fd636f5bf3bfa8ed7f617a656d308c)
+        ;
+
+        
+    
+    
+            var circle_marker_7451468d120a0c5cd10e03d33a8c963f = L.circleMarker(
+                [34.632093, -120.610829],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_f98f8f9b784203c9c0a3710fd9296b45 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8883555c8f442198fc62c9f374d347bc = $(`<div id="html_8883555c8f442198fc62c9f374d347bc" style="width: 100.0%; height: 100.0%;">Flight 59 | 2018-12-03 | VAFB SLC 4E | Successful</div>`)[0];
+                popup_f98f8f9b784203c9c0a3710fd9296b45.setContent(html_8883555c8f442198fc62c9f374d347bc);
+            
+        
+
+        circle_marker_7451468d120a0c5cd10e03d33a8c963f.bindPopup(popup_f98f8f9b784203c9c0a3710fd9296b45)
+        ;
+
+        
+    
+    
+            var circle_marker_45015a170b41a45585e2d68870873fdf = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_de14325e2f798802c300f42fd5ff8df5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_82864e4850f249854019900da53cb400 = $(`<div id="html_82864e4850f249854019900da53cb400" style="width: 100.0%; height: 100.0%;">Flight 60 | 2018-12-05 | CCAFS SLC 40 | Unsuccessful / no landing</div>`)[0];
+                popup_de14325e2f798802c300f42fd5ff8df5.setContent(html_82864e4850f249854019900da53cb400);
+            
+        
+
+        circle_marker_45015a170b41a45585e2d68870873fdf.bindPopup(popup_de14325e2f798802c300f42fd5ff8df5)
+        ;
+
+        
+    
+    
+            var circle_marker_6599dfdae1b5d9138583a1b4de4f39f2 = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_91b3f26acb5347d0f354c573eceaef04 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_66535b345de009e852a8509c084ceba3 = $(`<div id="html_66535b345de009e852a8509c084ceba3" style="width: 100.0%; height: 100.0%;">Flight 61 | 2018-12-23 | CCAFS SLC 40 | Unsuccessful / no landing</div>`)[0];
+                popup_91b3f26acb5347d0f354c573eceaef04.setContent(html_66535b345de009e852a8509c084ceba3);
+            
+        
+
+        circle_marker_6599dfdae1b5d9138583a1b4de4f39f2.bindPopup(popup_91b3f26acb5347d0f354c573eceaef04)
+        ;
+
+        
+    
+    
+            var circle_marker_33667d6e10e8f0dca7deca41746cfc95 = L.circleMarker(
+                [34.632093, -120.610829],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_56ea420d8a03780247a50fe69a04e9b3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0f97e4c4ef96392dd4201f5d8adb0f9e = $(`<div id="html_0f97e4c4ef96392dd4201f5d8adb0f9e" style="width: 100.0%; height: 100.0%;">Flight 62 | 2019-01-11 | VAFB SLC 4E | Successful</div>`)[0];
+                popup_56ea420d8a03780247a50fe69a04e9b3.setContent(html_0f97e4c4ef96392dd4201f5d8adb0f9e);
+            
+        
+
+        circle_marker_33667d6e10e8f0dca7deca41746cfc95.bindPopup(popup_56ea420d8a03780247a50fe69a04e9b3)
+        ;
+
+        
+    
+    
+            var circle_marker_88c0f4464150e61a29a4d575dd7d6415 = L.circleMarker(
+                [28.6080585, -80.6039558],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_37ea5b7aa2aaabf3dd664a95d81147d8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_090e2246c1d88045843929c6a85e1251 = $(`<div id="html_090e2246c1d88045843929c6a85e1251" style="width: 100.0%; height: 100.0%;">Flight 63 | 2019-03-02 | KSC LC 39A | Successful</div>`)[0];
+                popup_37ea5b7aa2aaabf3dd664a95d81147d8.setContent(html_090e2246c1d88045843929c6a85e1251);
+            
+        
+
+        circle_marker_88c0f4464150e61a29a4d575dd7d6415.bindPopup(popup_37ea5b7aa2aaabf3dd664a95d81147d8)
+        ;
+
+        
+    
+    
+            var circle_marker_3183b593552e82805e4d742c38f94220 = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_ce07a2fa67ee44af6d4642765e2dbd1e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_796a92286089c200c9b71074dce7825c = $(`<div id="html_796a92286089c200c9b71074dce7825c" style="width: 100.0%; height: 100.0%;">Flight 64 | 2019-05-04 | CCAFS SLC 40 | Successful</div>`)[0];
+                popup_ce07a2fa67ee44af6d4642765e2dbd1e.setContent(html_796a92286089c200c9b71074dce7825c);
+            
+        
+
+        circle_marker_3183b593552e82805e4d742c38f94220.bindPopup(popup_ce07a2fa67ee44af6d4642765e2dbd1e)
+        ;
+
+        
+    
+    
+            var circle_marker_3b146617042d53b773b1c6ce3a12ba67 = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_58cc4f1f9811aecca40832304d8a9f80 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cd3721ee5eec0f74fed4dc3111a4b449 = $(`<div id="html_cd3721ee5eec0f74fed4dc3111a4b449" style="width: 100.0%; height: 100.0%;">Flight 65 | 2019-05-24 | CCAFS SLC 40 | Successful</div>`)[0];
+                popup_58cc4f1f9811aecca40832304d8a9f80.setContent(html_cd3721ee5eec0f74fed4dc3111a4b449);
+            
+        
+
+        circle_marker_3b146617042d53b773b1c6ce3a12ba67.bindPopup(popup_58cc4f1f9811aecca40832304d8a9f80)
+        ;
+
+        
+    
+    
+            var circle_marker_4f9f441da5bc7f4558ad0c214e82a377 = L.circleMarker(
+                [34.632093, -120.610829],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_373edf371cb7aef6a5fda8f782570036 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4503ea60bc2ec244c20940949ce2ae46 = $(`<div id="html_4503ea60bc2ec244c20940949ce2ae46" style="width: 100.0%; height: 100.0%;">Flight 66 | 2019-06-12 | VAFB SLC 4E | Successful</div>`)[0];
+                popup_373edf371cb7aef6a5fda8f782570036.setContent(html_4503ea60bc2ec244c20940949ce2ae46);
+            
+        
+
+        circle_marker_4f9f441da5bc7f4558ad0c214e82a377.bindPopup(popup_373edf371cb7aef6a5fda8f782570036)
+        ;
+
+        
+    
+    
+            var circle_marker_e3b84bc30482c859f8f5dbb7e238ba21 = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_62bc457dbc9799ed2bb9773d1716eb0f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_266c89c4f05852972201b2b278b5eabb = $(`<div id="html_266c89c4f05852972201b2b278b5eabb" style="width: 100.0%; height: 100.0%;">Flight 67 | 2019-07-25 | CCAFS SLC 40 | Successful</div>`)[0];
+                popup_62bc457dbc9799ed2bb9773d1716eb0f.setContent(html_266c89c4f05852972201b2b278b5eabb);
+            
+        
+
+        circle_marker_e3b84bc30482c859f8f5dbb7e238ba21.bindPopup(popup_62bc457dbc9799ed2bb9773d1716eb0f)
+        ;
+
+        
+    
+    
+            var circle_marker_5563ce69e2d420c2b015e550a713d1eb = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_c5590368740987a50d297c0a079ee91c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8ad2a1d814b4549a96c6c53fd0bf890d = $(`<div id="html_8ad2a1d814b4549a96c6c53fd0bf890d" style="width: 100.0%; height: 100.0%;">Flight 68 | 2019-08-06 | CCAFS SLC 40 | Unsuccessful / no landing</div>`)[0];
+                popup_c5590368740987a50d297c0a079ee91c.setContent(html_8ad2a1d814b4549a96c6c53fd0bf890d);
+            
+        
+
+        circle_marker_5563ce69e2d420c2b015e550a713d1eb.bindPopup(popup_c5590368740987a50d297c0a079ee91c)
+        ;
+
+        
+    
+    
+            var circle_marker_aa6373d01551e420107c05c5790e2773 = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_a7e8cfc13786acdad583d23ac6743b96 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2f1d7c177ac723b4acc852cc1e399ad3 = $(`<div id="html_2f1d7c177ac723b4acc852cc1e399ad3" style="width: 100.0%; height: 100.0%;">Flight 69 | 2019-11-11 | CCAFS SLC 40 | Successful</div>`)[0];
+                popup_a7e8cfc13786acdad583d23ac6743b96.setContent(html_2f1d7c177ac723b4acc852cc1e399ad3);
+            
+        
+
+        circle_marker_aa6373d01551e420107c05c5790e2773.bindPopup(popup_a7e8cfc13786acdad583d23ac6743b96)
+        ;
+
+        
+    
+    
+            var circle_marker_2cf2f100b30bc19113ca3fcd70ed1028 = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_6b417f7b111fcff360ba23f00ccb7b4b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eb369c5a6eacc8e2897f77dab466b65f = $(`<div id="html_eb369c5a6eacc8e2897f77dab466b65f" style="width: 100.0%; height: 100.0%;">Flight 70 | 2019-12-05 | CCAFS SLC 40 | Successful</div>`)[0];
+                popup_6b417f7b111fcff360ba23f00ccb7b4b.setContent(html_eb369c5a6eacc8e2897f77dab466b65f);
+            
+        
+
+        circle_marker_2cf2f100b30bc19113ca3fcd70ed1028.bindPopup(popup_6b417f7b111fcff360ba23f00ccb7b4b)
+        ;
+
+        
+    
+    
+            var circle_marker_892d4d3618554ebeaee0ce7e1740adfe = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_127c1d6217edfdd64e28380f6d13667e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fe7eec12996c4e2fd2890a1e8ff165b6 = $(`<div id="html_fe7eec12996c4e2fd2890a1e8ff165b6" style="width: 100.0%; height: 100.0%;">Flight 71 | 2019-12-17 | CCAFS SLC 40 | Successful</div>`)[0];
+                popup_127c1d6217edfdd64e28380f6d13667e.setContent(html_fe7eec12996c4e2fd2890a1e8ff165b6);
+            
+        
+
+        circle_marker_892d4d3618554ebeaee0ce7e1740adfe.bindPopup(popup_127c1d6217edfdd64e28380f6d13667e)
+        ;
+
+        
+    
+    
+            var circle_marker_27f8bad173bd9da7cfcefa5f4af58f46 = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_6e92aacad59c4ec0df1ebcc06f795169 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0ca04bada887e7dc0c2efa534d4abf4b = $(`<div id="html_0ca04bada887e7dc0c2efa534d4abf4b" style="width: 100.0%; height: 100.0%;">Flight 72 | 2020-01-07 | CCAFS SLC 40 | Successful</div>`)[0];
+                popup_6e92aacad59c4ec0df1ebcc06f795169.setContent(html_0ca04bada887e7dc0c2efa534d4abf4b);
+            
+        
+
+        circle_marker_27f8bad173bd9da7cfcefa5f4af58f46.bindPopup(popup_6e92aacad59c4ec0df1ebcc06f795169)
+        ;
+
+        
+    
+    
+            var circle_marker_a956011ac61620041d9c521fdffcddc1 = L.circleMarker(
+                [28.6080585, -80.6039558],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_7e29ed8a1580bd8ceafecb68d87ff8c0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a85a0b653adac0640a63c36441053918 = $(`<div id="html_a85a0b653adac0640a63c36441053918" style="width: 100.0%; height: 100.0%;">Flight 73 | 2020-01-19 | KSC LC 39A | Unsuccessful / no landing</div>`)[0];
+                popup_7e29ed8a1580bd8ceafecb68d87ff8c0.setContent(html_a85a0b653adac0640a63c36441053918);
+            
+        
+
+        circle_marker_a956011ac61620041d9c521fdffcddc1.bindPopup(popup_7e29ed8a1580bd8ceafecb68d87ff8c0)
+        ;
+
+        
+    
+    
+            var circle_marker_9ceb600d4c84eb31274f378bd5e6f5ff = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_ee3751d8b471dbcca492c989b5069bdb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3f7281887e134fdede9d135dd011391d = $(`<div id="html_3f7281887e134fdede9d135dd011391d" style="width: 100.0%; height: 100.0%;">Flight 74 | 2020-01-29 | CCAFS SLC 40 | Successful</div>`)[0];
+                popup_ee3751d8b471dbcca492c989b5069bdb.setContent(html_3f7281887e134fdede9d135dd011391d);
+            
+        
+
+        circle_marker_9ceb600d4c84eb31274f378bd5e6f5ff.bindPopup(popup_ee3751d8b471dbcca492c989b5069bdb)
+        ;
+
+        
+    
+    
+            var circle_marker_977f4db9a319bb7bb30738a200afecc9 = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_89bbf2fe9e38aadd2414ca92e8921bf5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_808a8a7bbb195347e72b9f2606ac758b = $(`<div id="html_808a8a7bbb195347e72b9f2606ac758b" style="width: 100.0%; height: 100.0%;">Flight 75 | 2020-02-17 | CCAFS SLC 40 | Unsuccessful / no landing</div>`)[0];
+                popup_89bbf2fe9e38aadd2414ca92e8921bf5.setContent(html_808a8a7bbb195347e72b9f2606ac758b);
+            
+        
+
+        circle_marker_977f4db9a319bb7bb30738a200afecc9.bindPopup(popup_89bbf2fe9e38aadd2414ca92e8921bf5)
+        ;
+
+        
+    
+    
+            var circle_marker_c33d18551a69f2a41c911f7db37764e4 = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_a3cc6c35ddb7367658a31de9c1a037dc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_de7c54a21ddad9edb9b0fec9046fd564 = $(`<div id="html_de7c54a21ddad9edb9b0fec9046fd564" style="width: 100.0%; height: 100.0%;">Flight 76 | 2020-03-07 | CCAFS SLC 40 | Successful</div>`)[0];
+                popup_a3cc6c35ddb7367658a31de9c1a037dc.setContent(html_de7c54a21ddad9edb9b0fec9046fd564);
+            
+        
+
+        circle_marker_c33d18551a69f2a41c911f7db37764e4.bindPopup(popup_a3cc6c35ddb7367658a31de9c1a037dc)
+        ;
+
+        
+    
+    
+            var circle_marker_173ef2c4606fa9ea0d4ac6b6eaf073f7 = L.circleMarker(
+                [28.6080585, -80.6039558],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_4b7f15171381e39f60a08881f359539e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b697372df287340dc4f6b19011d7243a = $(`<div id="html_b697372df287340dc4f6b19011d7243a" style="width: 100.0%; height: 100.0%;">Flight 77 | 2020-03-18 | KSC LC 39A | Unsuccessful / no landing</div>`)[0];
+                popup_4b7f15171381e39f60a08881f359539e.setContent(html_b697372df287340dc4f6b19011d7243a);
+            
+        
+
+        circle_marker_173ef2c4606fa9ea0d4ac6b6eaf073f7.bindPopup(popup_4b7f15171381e39f60a08881f359539e)
+        ;
+
+        
+    
+    
+            var circle_marker_6ae38680b4367f0eada94573c9c4b7c0 = L.circleMarker(
+                [28.6080585, -80.6039558],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_8a6e867b22c8407bb370fec5c7d2acc2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a42d3328224bc0c7a5a10a16dbc9f01e = $(`<div id="html_a42d3328224bc0c7a5a10a16dbc9f01e" style="width: 100.0%; height: 100.0%;">Flight 78 | 2020-04-22 | KSC LC 39A | Successful</div>`)[0];
+                popup_8a6e867b22c8407bb370fec5c7d2acc2.setContent(html_a42d3328224bc0c7a5a10a16dbc9f01e);
+            
+        
+
+        circle_marker_6ae38680b4367f0eada94573c9c4b7c0.bindPopup(popup_8a6e867b22c8407bb370fec5c7d2acc2)
+        ;
+
+        
+    
+    
+            var circle_marker_11775d1f1538f1fffbf78e9133df005f = L.circleMarker(
+                [28.6080585, -80.6039558],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_b98ba643bec35f4645e0c35f72866c33 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_51a114331c911ff3c1905ba62a956454 = $(`<div id="html_51a114331c911ff3c1905ba62a956454" style="width: 100.0%; height: 100.0%;">Flight 79 | 2020-05-30 | KSC LC 39A | Successful</div>`)[0];
+                popup_b98ba643bec35f4645e0c35f72866c33.setContent(html_51a114331c911ff3c1905ba62a956454);
+            
+        
+
+        circle_marker_11775d1f1538f1fffbf78e9133df005f.bindPopup(popup_b98ba643bec35f4645e0c35f72866c33)
+        ;
+
+        
+    
+    
+            var circle_marker_1d32a8c1f4ffd3c4bceb5dc921b718d8 = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_851465687330dfbf0f9d3fe8a6f5629b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d3ee0e5cb12a2bb56e31bdb9589fe376 = $(`<div id="html_d3ee0e5cb12a2bb56e31bdb9589fe376" style="width: 100.0%; height: 100.0%;">Flight 80 | 2020-06-04 | CCAFS SLC 40 | Successful</div>`)[0];
+                popup_851465687330dfbf0f9d3fe8a6f5629b.setContent(html_d3ee0e5cb12a2bb56e31bdb9589fe376);
+            
+        
+
+        circle_marker_1d32a8c1f4ffd3c4bceb5dc921b718d8.bindPopup(popup_851465687330dfbf0f9d3fe8a6f5629b)
+        ;
+
+        
+    
+    
+            var circle_marker_79875083284f24eea09018e52a325d57 = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_ac77ff9f155c6169a6f988205f665f29 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0feca34719c49d3ac3f597b23eaddd5f = $(`<div id="html_0feca34719c49d3ac3f597b23eaddd5f" style="width: 100.0%; height: 100.0%;">Flight 81 | 2020-06-13 | CCAFS SLC 40 | Successful</div>`)[0];
+                popup_ac77ff9f155c6169a6f988205f665f29.setContent(html_0feca34719c49d3ac3f597b23eaddd5f);
+            
+        
+
+        circle_marker_79875083284f24eea09018e52a325d57.bindPopup(popup_ac77ff9f155c6169a6f988205f665f29)
+        ;
+
+        
+    
+    
+            var circle_marker_ef0e1636a91ebe10e77cc4e5c6266b46 = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_f9e7ff1c07cd76ce6ec88c8825ccc668 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c759177e2a7e4c23ff0063557dc05368 = $(`<div id="html_c759177e2a7e4c23ff0063557dc05368" style="width: 100.0%; height: 100.0%;">Flight 82 | 2020-06-30 | CCAFS SLC 40 | Successful</div>`)[0];
+                popup_f9e7ff1c07cd76ce6ec88c8825ccc668.setContent(html_c759177e2a7e4c23ff0063557dc05368);
+            
+        
+
+        circle_marker_ef0e1636a91ebe10e77cc4e5c6266b46.bindPopup(popup_f9e7ff1c07cd76ce6ec88c8825ccc668)
+        ;
+
+        
+    
+    
+            var circle_marker_94179ad5916f5bce504bdbc4fae53ae8 = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_d764fd7996815725ee71a4ef560c2a58 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_718bc5e5323eace8aaaa90dc9e67114f = $(`<div id="html_718bc5e5323eace8aaaa90dc9e67114f" style="width: 100.0%; height: 100.0%;">Flight 83 | 2020-07-20 | CCAFS SLC 40 | Successful</div>`)[0];
+                popup_d764fd7996815725ee71a4ef560c2a58.setContent(html_718bc5e5323eace8aaaa90dc9e67114f);
+            
+        
+
+        circle_marker_94179ad5916f5bce504bdbc4fae53ae8.bindPopup(popup_d764fd7996815725ee71a4ef560c2a58)
+        ;
+
+        
+    
+    
+            var circle_marker_74f410c89124cddda6fa31d4f48bb786 = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_56c942e88eb9506f6960a1ab2b5802fa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3310b1cd38bc907b2f8ac04a0227cb4f = $(`<div id="html_3310b1cd38bc907b2f8ac04a0227cb4f" style="width: 100.0%; height: 100.0%;">Flight 84 | 2020-08-18 | CCAFS SLC 40 | Successful</div>`)[0];
+                popup_56c942e88eb9506f6960a1ab2b5802fa.setContent(html_3310b1cd38bc907b2f8ac04a0227cb4f);
+            
+        
+
+        circle_marker_74f410c89124cddda6fa31d4f48bb786.bindPopup(popup_56c942e88eb9506f6960a1ab2b5802fa)
+        ;
+
+        
+    
+    
+            var circle_marker_675d10942d411b00746e25b527d010ba = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_b1253e6a36284df91a33fb855914a517 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7276fb4e1fe7223ee3a3f1b3b005a3e9 = $(`<div id="html_7276fb4e1fe7223ee3a3f1b3b005a3e9" style="width: 100.0%; height: 100.0%;">Flight 85 | 2020-08-30 | CCAFS SLC 40 | Successful</div>`)[0];
+                popup_b1253e6a36284df91a33fb855914a517.setContent(html_7276fb4e1fe7223ee3a3f1b3b005a3e9);
+            
+        
+
+        circle_marker_675d10942d411b00746e25b527d010ba.bindPopup(popup_b1253e6a36284df91a33fb855914a517)
+        ;
+
+        
+    
+    
+            var circle_marker_ca7ab6cefcdeba7ecec3cf40278d771d = L.circleMarker(
+                [28.6080585, -80.6039558],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_65b951fa34000c302df396c0687ca575 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5930716b3e11087c4a659fa2f6fe4c78 = $(`<div id="html_5930716b3e11087c4a659fa2f6fe4c78" style="width: 100.0%; height: 100.0%;">Flight 86 | 2020-09-03 | KSC LC 39A | Successful</div>`)[0];
+                popup_65b951fa34000c302df396c0687ca575.setContent(html_5930716b3e11087c4a659fa2f6fe4c78);
+            
+        
+
+        circle_marker_ca7ab6cefcdeba7ecec3cf40278d771d.bindPopup(popup_65b951fa34000c302df396c0687ca575)
+        ;
+
+        
+    
+    
+            var circle_marker_826103023e75574737fdaae6381eceef = L.circleMarker(
+                [28.6080585, -80.6039558],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_a7a9ca0cc41dc8661571b6c3740dff57 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b25e1604108ec96c9c778899649a1a45 = $(`<div id="html_b25e1604108ec96c9c778899649a1a45" style="width: 100.0%; height: 100.0%;">Flight 87 | 2020-10-06 | KSC LC 39A | Successful</div>`)[0];
+                popup_a7a9ca0cc41dc8661571b6c3740dff57.setContent(html_b25e1604108ec96c9c778899649a1a45);
+            
+        
+
+        circle_marker_826103023e75574737fdaae6381eceef.bindPopup(popup_a7a9ca0cc41dc8661571b6c3740dff57)
+        ;
+
+        
+    
+    
+            var circle_marker_21571062954290caab2489e1f2dd451e = L.circleMarker(
+                [28.6080585, -80.6039558],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_0e5eea798b125fb450e01665826a9891 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_021f58b4eed350c14005c306358043c5 = $(`<div id="html_021f58b4eed350c14005c306358043c5" style="width: 100.0%; height: 100.0%;">Flight 88 | 2020-10-18 | KSC LC 39A | Successful</div>`)[0];
+                popup_0e5eea798b125fb450e01665826a9891.setContent(html_021f58b4eed350c14005c306358043c5);
+            
+        
+
+        circle_marker_21571062954290caab2489e1f2dd451e.bindPopup(popup_0e5eea798b125fb450e01665826a9891)
+        ;
+
+        
+    
+    
+            var circle_marker_824c42d97912a37f0af922376fa3bf88 = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_a12677b9570a642ef746bf748d0cfdea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6a86c360a0694f5f380fde9fb0be2883 = $(`<div id="html_6a86c360a0694f5f380fde9fb0be2883" style="width: 100.0%; height: 100.0%;">Flight 89 | 2020-10-24 | CCAFS SLC 40 | Successful</div>`)[0];
+                popup_a12677b9570a642ef746bf748d0cfdea.setContent(html_6a86c360a0694f5f380fde9fb0be2883);
+            
+        
+
+        circle_marker_824c42d97912a37f0af922376fa3bf88.bindPopup(popup_a12677b9570a642ef746bf748d0cfdea)
+        ;
+
+        
+    
+    
+            var circle_marker_3a4e29dfc31416514df4f818b9ce3a5e = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_874441b4f1b47ba60f5d0471993c0e57);
+        
+    
+        var popup_9d95078b2d07e87dd9a3c8001a02410b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_21eb0903894dd1380dfb6b6280dcbd7e = $(`<div id="html_21eb0903894dd1380dfb6b6280dcbd7e" style="width: 100.0%; height: 100.0%;">Flight 90 | 2020-11-05 | CCAFS SLC 40 | Successful</div>`)[0];
+                popup_9d95078b2d07e87dd9a3c8001a02410b.setContent(html_21eb0903894dd1380dfb6b6280dcbd7e);
+            
+        
+
+        circle_marker_3a4e29dfc31416514df4f818b9ce3a5e.bindPopup(popup_9d95078b2d07e87dd9a3c8001a02410b)
+        ;
+
+        
+    
+    
+            marker_cluster_874441b4f1b47ba60f5d0471993c0e57.addTo(map_16a115000bde588c66be45ae5e300141);
+        
+    
+            var circle_marker_2bf774539a5b4b5bde8422a82b64c1ad = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "#00699c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00699c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_16a115000bde588c66be45ae5e300141);
+        
+    
+        var popup_cfc3e5d8531842a7099a02c133e8a818 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_76ef382fefa6b0f3e6d61e582a5fb4e8 = $(`<div id="html_76ef382fefa6b0f3e6d61e582a5fb4e8" style="width: 100.0%; height: 100.0%;">CCAFS SLC 40: 33/55 first-stage landing successes</div>`)[0];
+                popup_cfc3e5d8531842a7099a02c133e8a818.setContent(html_76ef382fefa6b0f3e6d61e582a5fb4e8);
+            
+        
+
+        circle_marker_2bf774539a5b4b5bde8422a82b64c1ad.bindPopup(popup_cfc3e5d8531842a7099a02c133e8a818)
+        ;
+
+        
+    
+    
+            circle_marker_2bf774539a5b4b5bde8422a82b64c1ad.bindTooltip(
                 `<div>
                      CCAFS SLC 40: 55 launches
                  </div>`,
@@ -131,30 +2213,30 @@
             );
         
     
-            var circle_marker_ba26f86be4ff0bbc8a479cba395f4195 = L.circleMarker(
+            var circle_marker_040c633bf4a34a38bc949b47b76ce2e9 = L.circleMarker(
                 [28.6080585, -80.6039558],
                 {"bubblingMouseEvents": true, "color": "#00699c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00699c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
-            ).addTo(map_181ccbf2f7158bc5801969b4af249693);
+            ).addTo(map_16a115000bde588c66be45ae5e300141);
         
     
-        var popup_39f8031ab0039d9ec6041c847476245e = L.popup({
+        var popup_f36b9cd3264411dddcae299431f66e6b = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_9f9db0b0987695fe60a8ab21d190e35e = $(`<div id="html_9f9db0b0987695fe60a8ab21d190e35e" style="width: 100.0%; height: 100.0%;">KSC LC 39A: 17/22 first-stage landing successes</div>`)[0];
-                popup_39f8031ab0039d9ec6041c847476245e.setContent(html_9f9db0b0987695fe60a8ab21d190e35e);
+                var html_1eb2fab9403b4465d98e688500538ff5 = $(`<div id="html_1eb2fab9403b4465d98e688500538ff5" style="width: 100.0%; height: 100.0%;">KSC LC 39A: 17/22 first-stage landing successes</div>`)[0];
+                popup_f36b9cd3264411dddcae299431f66e6b.setContent(html_1eb2fab9403b4465d98e688500538ff5);
             
         
 
-        circle_marker_ba26f86be4ff0bbc8a479cba395f4195.bindPopup(popup_39f8031ab0039d9ec6041c847476245e)
+        circle_marker_040c633bf4a34a38bc949b47b76ce2e9.bindPopup(popup_f36b9cd3264411dddcae299431f66e6b)
         ;
 
         
     
     
-            circle_marker_ba26f86be4ff0bbc8a479cba395f4195.bindTooltip(
+            circle_marker_040c633bf4a34a38bc949b47b76ce2e9.bindTooltip(
                 `<div>
                      KSC LC 39A: 22 launches
                  </div>`,
@@ -164,30 +2246,30 @@
             );
         
     
-            var circle_marker_8c73273cdba3045e4c5eceb6c5ae126c = L.circleMarker(
+            var circle_marker_dfc9ede8aa636636f430a28689a26e43 = L.circleMarker(
                 [34.632093, -120.610829],
                 {"bubblingMouseEvents": true, "color": "#00699c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00699c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
-            ).addTo(map_181ccbf2f7158bc5801969b4af249693);
+            ).addTo(map_16a115000bde588c66be45ae5e300141);
         
     
-        var popup_59e308cb9ae4f19f145aaa4768cae577 = L.popup({
+        var popup_f77592b19fea5ce9049bdd2bf20cc43d = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_a32cd18a6f4adbc48a662d33f82763ad = $(`<div id="html_a32cd18a6f4adbc48a662d33f82763ad" style="width: 100.0%; height: 100.0%;">VAFB SLC 4E: 10/13 first-stage landing successes</div>`)[0];
-                popup_59e308cb9ae4f19f145aaa4768cae577.setContent(html_a32cd18a6f4adbc48a662d33f82763ad);
+                var html_19799ccf925ee053c4733e3a0ecdc275 = $(`<div id="html_19799ccf925ee053c4733e3a0ecdc275" style="width: 100.0%; height: 100.0%;">VAFB SLC 4E: 10/13 first-stage landing successes</div>`)[0];
+                popup_f77592b19fea5ce9049bdd2bf20cc43d.setContent(html_19799ccf925ee053c4733e3a0ecdc275);
             
         
 
-        circle_marker_8c73273cdba3045e4c5eceb6c5ae126c.bindPopup(popup_59e308cb9ae4f19f145aaa4768cae577)
+        circle_marker_dfc9ede8aa636636f430a28689a26e43.bindPopup(popup_f77592b19fea5ce9049bdd2bf20cc43d)
         ;
 
         
     
     
-            circle_marker_8c73273cdba3045e4c5eceb6c5ae126c.bindTooltip(
+            circle_marker_dfc9ede8aa636636f430a28689a26e43.bindTooltip(
                 `<div>
                      VAFB SLC 4E: 13 launches
                  </div>`,
@@ -195,6 +2277,59 @@
   "sticky": true,
 }
             );
+        
+    
+            var marker_ad58e877a550a605690ac6b520e30bd2 = L.marker(
+                [28.56409, -80.56806],
+                {
+}
+            ).addTo(map_16a115000bde588c66be45ae5e300141);
+        
+    
+            marker_ad58e877a550a605690ac6b520e30bd2.bindTooltip(
+                `<div>
+                     Coastal reference: 0.94 km straight line
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_e15a07d875fa6b76e1f0f2ebfcf3df0a = L.polyline(
+                [[28.5618571, -80.577366], [28.56409, -80.56806]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_16a115000bde588c66be45ae5e300141);
+        
+    
+            poly_line_e15a07d875fa6b76e1f0f2ebfcf3df0a.bindTooltip(
+                `<div>
+                     0.94 km to coastal reference
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var layer_control_39b17a4c6859b5df187634ec9462b994_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_93fb19deb50ec0c6176dc2f8c1d2eb9e,
+                },
+                overlays :  {
+                    "Launch records" : marker_cluster_874441b4f1b47ba60f5d0471993c0e57,
+                },
+            };
+            let layer_control_39b17a4c6859b5df187634ec9462b994 = L.control.layers(
+                layer_control_39b17a4c6859b5df187634ec9462b994_layers.base_layers,
+                layer_control_39b17a4c6859b5df187634ec9462b994_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_16a115000bde588c66be45ae5e300141);
+
         
 </script>
 </html>

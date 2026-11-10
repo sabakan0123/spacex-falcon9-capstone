@@ -1,0 +1,3 @@
+Live API unavailable (ReadTimeout); using IBM course snapshot
+IBM course static API-response snapshot: 107 launch records
+Wikipedia revision 1027686922: 9 tables, 121 complete 10-column rows

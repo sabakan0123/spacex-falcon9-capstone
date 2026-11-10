@@ -9,6 +9,8 @@ notebook.metadata.kernelspec = {"display_name": "Python 3", "language": "python"
 notebook.cells = [
     nbf.v4.new_markdown_cell("# SpaceX Falcon 9 first-stage landing analysis\n\nIndependent reproduction using IBM's course datasets. `dataset_part_2.csv` has 90 model records, while the separate SQL data has 101 records. Landing outcome differs from mission outcome."),
     nbf.v4.new_code_cell("import pandas as pd\nimport sqlite3\nimport json\nfrom pathlib import Path\n\ndf = pd.read_csv('dataset_part_2.csv')\nprint(f'{len(df)} launches, {df.Date.min()} to {df.Date.max()}')\ndf[['Date', 'LaunchSite', 'Orbit', 'PayloadMass', 'Outcome', 'Class']].head()"),
+    nbf.v4.new_markdown_cell("## Data collection demonstrations\n`data_collection.py` attempts the SpaceX v4 API, and falls back to the course's static API-response snapshot if the live endpoint is unavailable. It also scrapes the fixed 2021 Wikipedia revision. These two samples are not used as direct inputs to the 90-row modeling data."),
+    nbf.v4.new_code_cell("api = pd.read_csv('api_launch_sample.csv')\nweb = pd.read_csv('wiki_launch_sample.csv')\nprint(f'API-response sample: {len(api)} rows; Wikipedia sample: {len(web)} rows')\nweb.head(3)"),
     nbf.v4.new_markdown_cell("## Exploratory analysis\nClass 1 includes successful ground, drone-ship or controlled ocean outcomes. Class 0 also includes records with no landing attempt."),
     nbf.v4.new_code_cell("print('Overall counts:', df.Class.value_counts().to_dict())\ndf.groupby('LaunchSite').Class.agg(launches='count', successes='sum', success_rate='mean')"),
     nbf.v4.new_code_cell("df.groupby('Orbit').Class.agg(launches='count', successes='sum', success_rate='mean').sort_values('launches', ascending=False)"),
